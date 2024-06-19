@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agendamento.css">
+    <title>Agendamento de Consulta</title>
+</head>
+<body>
+    <header>
+        <h1>Agendamento de Horário</h1>
+        <p>Para sua conveniência, oferecemos uma maneira fácil e rápida de marcar seus compromissos. Siga as instruções abaixo para agendar seu horário.</p>
+        <section class="instrucoes">
+            <ul>
+                <li>Escolha uma data disponível no calendário.</li>
+                <li>Selecione um horário que melhor se adeque à sua agenda.</li>
+                <li>Preencha as informações necessárias e clique em "Agendar".</li>
+            </ul>
+        </section>
+    </header>
+    <main>   
+        <section class="agendamento__container">
+            <form id="agendamentoForm">
+                <div class="form-group">
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required pattern="\d{11}" title="Digite um CPF válido com 11 dígitos.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone1">Telefone 1:</label>
+                    <input type="tel" id="telefone1" name="telefone1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone2">Telefone 2:</label>
+                    <input type="tel" id="telefone2" name="telefone2">
+                </div>
+                
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+                
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+        
+        <section class="confirmacao">
+            <h2>Agendamentos:</h2>
+            <ul id="listaAgendamentos"></ul>
+            <p>Após confirmar seu agendamento, você receberá uma confirmação por e-mail. Se precisar alterar ou cancelar seu compromisso, por favor, entre em contato conosco com antecedência.</p>
+        </section>
+        <a href="../index.html"><button class="btn__busca">HOME</button></a>
+    </main>
+    <script src="agendamento.js"></script>
+</body>
+</html>

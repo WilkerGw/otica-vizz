@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --cor-cinza-fundo:rgb(167, 167, 167);
+    --cor-azul-claro: #D6E9F0;
+    --cor-verde-escuro: #106da7;
+    --cor-verde-claro: #499acd;
+    --cor-btn: #06488a;
+    --cor-branca: #fff;
+    --cor-borda-btn: #ffffff48;
+    --cor-cinza: #c8c8c8;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: var(--cor-branca);
+    background-color: var(--cor-cinza-fundo);
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+main h1 {
+    margin: 0.5rem 0rem;
+}
+
+.modo__cinza__btn {
+    align-self: flex-end;
+    width: auto;
+    height: auto;
+    background-color: var(--cor-verde-escuro);
+    border-radius: 50%;
+    padding: 0.2em;
+    margin: 0.2rem;
+    opacity: 60%;
+}
+
+
+
