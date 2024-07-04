@@ -1,8 +1,14 @@
-let temaCinzaBtn = document.querySelector('.modo__cinza__btn');
-let fundoImagem = document.querySelector('.lancamento__img');
+let msgEstoque = document.querySelector('.p__disponivel');
+let qtdEstoque = 1;
 
-temaCinzaBtn.addEventListener('click', () => {
-    if (fundoImagem.style.backgroundColor == 'rgb(16, 109, 167)') {
-        fundoImagem.style.backgroundColor = '#A7A7A7';
+function estoque() {
+    if (qtdEstoque < 1) {
+        msgEstoque.innerText = 'Não disponível';
+        msgEstoque.style.color = 'red'
+        msgEstoque.style.fontWeight = 'bold'
+    }else{
+        msgEstoque.innerText = 'Produto disponível';
     }
-});
+}
+
+estoque();

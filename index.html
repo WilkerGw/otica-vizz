@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Ótica Vizz</title>
     <script src="banner/banner.js" defer></script>
-    <script src="lancamento/tema.js"></script>
+    <script src="lancamento/tema.js" defer></script>
     <script src="lancamento/lancamento.js" defer></script>
 </head>
 <body>
@@ -20,14 +20,14 @@
                 <a href="" class="img__marca2">
                     <img src="images/vizz-logo-pequena.png" alt="" id="imgLogo2">
                 </a>
-                <ul>
+                <ul class="lista__opcoes">
                     <li>HOME</li>
-                    <li id="listaSol" class="sub__sol">ÓCULOS DE SOL</li>
+                    <li id="listaSol" class="sub__sol">SOL <img src="icons/mais.png" alt="" class="mais__icone"></li>
                         <ul id="subSol" class="sub__lista">
                             <li><a href="secao-masc-fem/secao-masc.html#container__sol__masc">MASCULINO</a></li>
                             <li><a href="secao-masc-fem/secao-fem.html#container__sol__fem">FEMININO</a></li>
                         </ul>
-                    <li id="listaGrau" class="sub__grau">ÓCULOS DE GRAU</li>
+                    <li id="listaGrau" class="sub__grau">GRAU <img src="icons/mais.png" alt="" class="mais__icone"></li>
                         <ul id="subGrau" class="sub__lista">
                             <li><a href="secao-masc-fem/secao-masc.html#container__grau__masc">MASCULINO</a></li>
                             <li><a href="secao-masc-fem/secao-fem.html#container__grau__fem">FEMININO</a></li>
@@ -43,6 +43,7 @@
                             <a href="#mapa" class="link__style">GOOGLE MAPS</a>
                         </li>
                 </ul>
+                <div class="container__v"><img src="images/v.png" alt="" class="v__menu"></div>
             </nav>
             <img src="icons/cardapio-bco.png" alt="" id="btnMenu" class="icone__menu">
             <img src="icons/fecha-bco.png" alt="" class="icone__fecha" id="imgFecha">
@@ -55,36 +56,37 @@
         <!--<a href="https://api.whatsapp.com/send?phone=SEUNUMERO" class="whatsapp-button" target="_blank">
             <img src="icons/whatsapp-fixo.png" alt="WhatsApp Logo">
         </a> -->
-        <div class="container__provisorio">
-            <div class="busca__container">
-                <img src="icons/lupa-azul.png" alt="Buscar..." class="icone__lupa"/>
-                <input type="text" class="txt__busca" placeholder="Buscar..."/>
-                <button class="btn__busca">Buscar</button>
+        <div class="grid__responsivo">
+            <div class="container__provisorio">
+                <div class="busca__container">
+                    <img src="icons/lupa-azul.png" alt="Buscar..." class="icone__lupa"/>
+                    <input type="text" class="txt__busca" placeholder="Buscar..."/>
+                    <button class="btn__busca">Buscar</button>
+                </div>
+            </div>
+                <div class="container__style__logo">
+                    <img src="images/logo-vizz-completa.png" alt="" class="img__oculos-preto">
+                </div>
+                <div class="redes__container">
+                    <a href="https://www.instagram.com/oticasvizz/" target="_blank"><img src="icons/icon-instagram.png" alt=""></a>
+                    <a href="https://wa.me/+5534993210534" target="_blank"><img src="icons/icon-whatsapp.png" alt=""></a>
+                    <a href="https://www.facebook.com/wilker.martins.104/" target="_blank"><img src="icons/icon-facebook.png" alt=""></a>
+                </div>
+                <div class="carousel">
+                    <img src="banner/banners-img/banner-1.png" class="active">
+                    <img src="banner/banners-img/banner2.png">
+                    <img src="banner/banners-img/banner3.png">
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+            <div class="dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-            <div class="container__style__logo">
-                <img src="images/logo-vizz-completa.png" alt="" class="img__oculos-preto">
-            </div>
-            <div class="redes__container">
-                <a href="https://www.instagram.com/oticasvizz/" target="_blank"><img src="icons/icon-instagram.png" alt=""></a>
-                <a href="https://wa.me/+5534993210534" target="_blank"><img src="icons/icon-whatsapp.png" alt=""></a>
-                <a href="https://www.facebook.com/wilker.martins.104/" target="_blank"><img src="icons/icon-facebook.png" alt=""></a>
-            </div>
-            <div class="carousel">
-            <img src="banner/banners-img/banner1.png" class="active">
-            <img src="banner/banners-img/banner2.png">
-            <img src="banner/banners-img/banner3.png">
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
-        <div class="dots">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <img src="icons/dia-e-noite.png" alt="" class="modo__cinza__btn">
-        <div class="lancamento">
-            <h1>Lançamentos</h1>
+        <h1 class="lancamento__h1">Lançamentos</h1>
+        <div class="lancamento lancamento__destaque__resp">
             <div class="borda__imagem__lancamento">
                     <h3>Modelo X12f1</h3>
                     <img src="images/oculos/destaque01/destaque1.png" alt="" class="lancamento__img">
@@ -99,8 +101,8 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <a href="" class="link__estoque">
-                <p class="lancamento__paragrafo-estoque">
-                    2 itens em estoque
+                <p class="p__disponivel">
+                    Produto disponível
                 </p>
             </a>
             <p class="lancamento__paragrafo-preco">
@@ -111,8 +113,8 @@
                 <button class="lancamento__btn"><img src="icons/comprar.png" class="icone__comprar" alt=""> COMPRAR</button>
             </div>
             <button class="mais__lancamentos-btn">
-                MAIS LANCAMENTOS
                 <img src="icons/flecha-baixo.png" alt="" class="flecha__icone">
+                <p class="mais__responsivo">MAIS LANCAMENTOS</p>
             </button>
         </div>
         <div class="lancamentos__container">
@@ -133,8 +135,8 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <a href="" class="link__estoque">
-                    <p class="lancamento__paragrafo-estoque">
-                        2 itens em estoque
+                    <p class="p__disponivel">
+                        Produto disponível
                     </p>
                 </a>
                 <p class="lancamento__paragrafo-preco">
@@ -160,8 +162,8 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <a href="" class="link__estoque">
-                    <p class="lancamento__paragrafo-estoque">
-                        2 itens em estoque
+                    <p class="p__disponivel">
+                        Produto disponível
                     </p>
                 </a>
                 <p class="lancamento__paragrafo-preco">
@@ -187,8 +189,8 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <a href="" class="link__estoque">
-                    <p class="lancamento__paragrafo-estoque">
-                        2 itens em estoque
+                    <p class="p__disponivel">
+                        Produto disponível
                     </p>
                 </a>
                 <p class="lancamento__paragrafo-preco">
@@ -198,17 +200,18 @@
                     <p class="vermail">Ver mais</p>
                     <button class="lancamento__btn"><img src="icons/comprar.png" class="icone__comprar" alt=""> COMPRAR</button>
                 </div>
-                <button class="menos__lancamentos-btn">
-                    FECHAR LANÇAMENTOS
-                    <img src="icons/flecha-cima.png" alt="" class="flecha__icone">
-                </button>
             </div>
+            <button class="menos__lancamentos-btn">
+                <p>FECHAR LANÇAMENTOS</p>
+                <img src="icons/flecha-cima.png" alt="" class="flecha__icone">
+            </button>
         </div>
         <div class="exames">
-            <h1>Exames de Vista</h1>
-            <img src="images/oculos-variadas/exame.png" alt="" class="img__exame">
+            <h1 class="exame__h1">Exames de Vista</h1>
             <p>Agende seu exame de vista com nossos especialistas e cuide da sua saúde ocular.</p>
-            <button class="lancamento__btn"><a href="agendamento/agendamento.html">AGENDAR</a></button>
+            <img src="images/oculos-variadas/exame.png" alt="" class="img__exame">
+            <img src="icons/flecha-baixo.png" alt="" class="flecha__icone">
+            <button class="agendar__btn lancamento__btn"><a href="agendamento/agendamento.html">AGENDAR</a></button>
         </div>
         <div class="endereco" id="ende">
             <h1>Endereço</h1>
@@ -221,24 +224,18 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0428538714436!2d-46.5278773!3d-23.602795999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d68e7a3fba5%3A0xd88637e2f00bac1a!2sAv.%20do%20Orat%C3%B3rio%2C%204865%20-%20Jardim%20Guairaca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003221-200!5e0!3m2!1spt-BR!2sbr!4v1718342433715!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
         <div class="contato" id="contato">
             <h1>FALE CONOSCO</h1>
-            <p>Nos siga nas redes sociais para acompanhar as novidades e fale com um consultor pelo Whatsapp.</p>
             <div class="contato__container">
                 <div class="contato-whatsapp">
-                    <h2>Whatsapp</h2>
                     <img src="icons/icon-whatsapp.png" alt="">
-                    <p>(34) 9 92047177</p>
                 </div>
                 <div class="contato-instagram">
-                    <h2>Instagram</h2>
                 <img src="icons/icon-instagram.png" alt="">
-                <p>@oticasvizz</p>
                 </div>
                 <div class="contato-facebook">
-                    <h2>Facebook</h2>
                     <img src="icons/icon-facebook.png" alt="">
-                    <p>Ótica VIZZ</p>
                 </div>
             </div>
+            <p>Nos siga nas redes sociais para acompanhar as novidades e fale com um consultor pelo Whatsapp.</p>
         </div>
     </main>
     <footer>

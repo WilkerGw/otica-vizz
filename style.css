@@ -33,20 +33,8 @@ main {
     overflow: hidden;
 }
 
-main h1 {
-    margin: 0.5rem 0rem;
-}
 
-.modo__cinza__btn {
-    align-self: flex-end;
-    width: auto;
-    height: auto;
-    background-color: var(--cor-verde-escuro);
-    border-radius: 50%;
-    padding: 0.2em;
-    margin: 0.2rem;
-    opacity: 60%;
-}
+
 
 
 

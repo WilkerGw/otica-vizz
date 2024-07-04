@@ -20,7 +20,6 @@
 
 
 .endereco {
-    margin-top: 1rem;
     width: 100%;
     text-align: center;
     color: white;
@@ -29,6 +28,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
 }
 .endereco > iframe {
     margin-top: 1rem;
@@ -37,7 +37,10 @@
 }
 
 .endereco p {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
+
 }
 
 .endereco p:nth-child(3) {
@@ -45,12 +48,10 @@
 }
 
 .endereco > h1 {
-    font-size: 1.2rem;
-    padding: 0;
-}
-
-.paragrafo__end {
+    font-weight: 100;
     letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .contato, .contato__container {
@@ -58,6 +59,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
 }
 
 .contato__container {
@@ -74,22 +76,36 @@
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-inline: 0.1rem;
+}
+
+.contato-whatsapp img, .contato-instagram img, .contato-facebook img {
+    width: 1.5rem;
+    height: auto;
 }
 
 .contato-whatsapp, .contato-instagram, .contato-facebook p {
     font-size: 0.9rem;
+    width: 100%;
 }
 
 .contato__container h2{
     font-size: 1rem;
 }
 
+.contato > h1 {
+    margin-top: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+
 .contato > p {
     text-align: center;
-    font-size: 0.8rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
 }
 
 .whatsapp-button {
@@ -102,29 +118,4 @@
 .whatsapp-button img {
     width: 60px; /* Ajuste conforme necessário */
     height: auto;
-}
-
-
-@media (min-width: 701px) {
-    
-    .endereco, .contato {
-        width: 100%;
-    } 
-    
-    .contato__container {
-        margin: 1rem 0rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .contato p, .contato__container, .endereco p, h1{
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-    }
-
-
-
 }

@@ -26,19 +26,19 @@ imgFecha.onclick = function () {
 
 function mostraMenu() {
     if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'block';
+        menu.style.display = 'grid';
         btnMenu.style.display = 'none';
         imgLogo.style.display = 'none';
         imgCarrinho.style.display = 'none';
         imgLupa.style.display = 'none';
-        imgFecha.style.display = 'block';
+        imgFecha.style.display = 'grid';
     } else {
         menu.style.display = 'none';
     }
 }
 
 function fechaMenu() {
-    if (menu.style.display === 'block' || menu.style.display === 'block') {
+    if (menu.style.display === 'grid' || menu.style.display === 'block') {
         menu.style.display = 'none';
         btnMenu.style.display = 'block'
         imgLogo.style.display = 'block'

@@ -44,8 +44,27 @@ header {
 }
 
 nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container__v{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.v__menu {
+    width: 12rem;
+    height: auto;
+    opacity: 10%;
+}
+
+nav {
     display: none;
 }
+
 
 ul li {
     cursor: pointer;
@@ -68,6 +87,12 @@ ul li a {
     color: var(--cor-branca);
 }
 
+.sub__sol, .sub__grau {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .icone__fecha {
     display: none;
     position: absolute;
@@ -83,90 +108,8 @@ ul li a {
     height: auto;
 }
 
-@media (min-width: 701px) {
-    header {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    nav {
-        width: 100%;
-        display: flex;
-    }
-
-    main {
-        max-width: 1000px;
-    }
-
-    .img__marca2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 10rem;
-    }
-
-    .img__marca {
-        display: none;
-    }
-
-    .sub__sol, .sub__grau {
-        display: none;
-    }
-
-    nav ul {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav ul li {
-        text-align: center;
-        padding: 0rem 0.5rem;
-        margin-left: 1rem;
-        font-size: 1.1rem;
-    }
-
-    .sub__lista {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        background-color: #010b157b;
-        border-radius: 0.5rem;
-        padding: 0.3rem;
-    }
-
-    .sub__lista li {
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        font-size: 1rem;
-        color: var(--cor-branca);  
-
-    }
-
-    .link__style {
-        font-size: 1rem;
-        color: var(--cor-branca);
-    }
-
-    ul li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.1rem;
-        margin-left: 2rem;
-    }
-
-    .icone__menu {
-        display: none;
-    }
-
-    .link__style {
-        text-decoration: none;
-    }
+.v__men {
+    width: 10rem;
+    height: auto;
 }
 
