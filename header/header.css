@@ -43,6 +43,10 @@ header {
     margin-left: 1.5rem;
 }
 
+.mais__icone {
+    width: 1rem;
+}
+
 .container__v{
     display: flex;
     align-items: center;

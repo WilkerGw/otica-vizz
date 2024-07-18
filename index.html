@@ -11,8 +11,7 @@
     <title>Ótica Vizz</title>
     <script src="menu.js" defer></script>
     <script src="banner/banner.js" defer></script>
-    <script src="lancamento/tema.js" defer></script>
-    <script src="lancamento/lancamento.js" defer></script>
+    <script src="move-btn.js" defer ></script>
 </head>
 <body>
     <header id="cabecalho">
@@ -54,7 +53,7 @@
         </div>
     </header>
     <main>
-        <section class="grid__responsivo">
+        <section class="container__banner">
             <div class="container__provisorio">
                 <div class="busca__container">
                     <img src="icons/lupa-cinza.png" alt="Buscar..." class="icone__lupa"/>
@@ -83,158 +82,41 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </section>
-        <section class="lancamento">
-            <h1 class="lancamento__h1">Lançamentos</h1>
-            <div class="borda__imagem__lancamento">
-                    <h3>Modelo X12f1</h3>
-                    <img src="images/oculos/destaque01/destaque1.png" alt="" class="lancamento__img">
-                        <ul class="lista_img_destaque">
-                            <li class="img-lista"><img src="images/oculos/destaque01/destaque1 - Copia.png" alt=""></li>
-                            <li class="img-lista"><img src="images/oculos/destaque01/destaque1 - Copia (2).png" alt=""></li>
-                            <li class="img-lista"><img src="images/oculos/destaque01/destaque1 - Copia (3).png" alt=""></li>
-                        </ul>
-                        <p class="mais-detalhes">Mais fotos</p>
-                    </div>
-            <p class="lancamento__paragrafo">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-            <a href="" class="link__estoque">
-                <p class="p__disponivel">
-                    Produto disponível
-                </p>
-            </a>
-            <p class="lancamento__paragrafo-preco">
-                R$ 99,90
-            </p>
-            <div class="container__botoes">
-                <p class="vermail">Ver mais</p>
-                <button class="lancamento__btn"><img src="icons/carrinho-btn.png" class="icone__comprar" alt=""> COMPRAR</button>
-            </div>
-            <button class="mais__lancamentos-btn">
-                <img src="icons/flecha-baixo.png" alt="" class="flecha__icone flecha__icone-baixo">
-                <p class="mais__responsivo">MAIS LANCAMENTOS</p>
-            </button>
-        </section>
-        <section class="lancamentos__container">
-            <div class="lancamento">
-                <div class="borda__imagem__lancamento">
-                    <div class="container__mudar__imagem">
-                        <h3>Modelo X12f1</h3>
-                        <img src="images/oculos/destaque02/destaque2.png" alt="" class="lancamento__img">
-                    </div>
-                        <ul class="lista_img_destaque">
-                            <li class="img-lista"><img src="images/oculos/destaque02/destaque2 - Copia.png" alt="" class="img__troca"></li>
-                            <li class="img-lista"><img src="images/oculos/destaque02/destaque2 - Copia (2).png" alt="" class="img__troca"></li>
-                            <li class="img-lista"><img src="images/oculos/destaque02/destaque2 - Copia (3).png" alt="" class="img__troca"></li>
-                        </ul>
-                        <p class="mais-detalhes">Mais fotos</p>
-                </div>
-                <p class="lancamento__paragrafo">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="" class="link__estoque">
-                    <p class="p__disponivel">
-                        Produto disponível
-                    </p>
-                </a>
-                <p class="lancamento__paragrafo-preco">
-                    R$ 99,90
-                </p>
-                <div class="container__botoes">
-                    <p class="vermail">Ver mais</p>
-                    <button class="lancamento__btn"><img src="icons/carrinho-btn.png" class="icone__comprar" alt=""> COMPRAR</button>
-                </div>
-            </div>
-            <div class="lancamento">
-                <h3>Modelo X12f1</h3>
-                <div class="borda__imagem__lancamento">
-                    <img src="images/oculos/destaque03/destaque3.png" alt="" class="lancamento__img">
-                        <ul class="lista_img_destaque">
-                            <li class="img-lista"><img src="images/oculos/destaque03/destaque3 - Copia.png" alt=""></li>
-                            <li class="img-lista"><img src="images/oculos/destaque03/destaque3 - Copia (2).png" alt=""></li>
-                            <li class="img-lista"><img src="images/oculos/destaque03/destaque3 - Copia (3).png" alt=""></li>
-                        </ul>
-                        <p class="mais-detalhes">Mais fotos</p>
-                </div>
-                <p class="lancamento__paragrafo">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="" class="link__estoque">
-                    <p class="p__disponivel">
-                        Produto disponível
-                    </p>
-                </a>
-                <p class="lancamento__paragrafo-preco">
-                    R$ 99,90
-                </p>
-                <div class="container__botoes">
-                    <p class="vermail">Ver mais</p>
-                    <button class="lancamento__btn"><img src="icons/carrinho-btn.png" class="icone__comprar" alt=""> COMPRAR</button>
-                </div>
-            </div>
-            <div class="lancamento">
-                <h3>Modelo X12f1</h3>
-                <div class="borda__imagem__lancamento">
-                    <img src="images/oculos/destaque04/destaque4.png" alt="" class="lancamento__img">
-                        <ul class="lista_img_destaque">
-                            <li class="img-lista"><img src="images/oculos/destaque04/destaque4 - Copia.png" alt=""></li>
-                            <li class="img-lista"><img src="images/oculos/destaque04/destaque4 - Copia (2).png" alt=""></li>
-                            <li class="img-lista"><img src="images/oculos/destaque04/destaque4 - Copia (3).png" alt=""></li>
-                        </ul>
-                        <p class="mais-detalhes">Mais fotos</p>
-                </div>
-                <p class="lancamento__paragrafo">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="" class="link__estoque">
-                    <p class="p__disponivel">
-                        Produto disponível
-                    </p>
-                </a>
-                <p class="lancamento__paragrafo-preco">
-                    R$ 99,90
-                </p>
-                <div class="container__botoes">
-                    <p class="vermail">Ver mais</p>
-                    <button class="lancamento__btn"><img src="icons/carrinho-btn.png" class="icone__comprar" alt=""> COMPRAR</button>
-                </div>
-            </div>
-            <button class="menos__lancamentos-btn">
-                <p>FECHAR LANÇAMENTO</p>
-                <img src="icons/flecha-cima.png" alt="" class="flecha__icone">
-            </button>
-        </section>
-        <section class="exames">
+        <section class="container__exames">
             <h1 class="exame__h1">Exames de Vista</h1>
             <p>Agende seu exame de vista com nossos especialistas e cuide da sua saúde ocular.</p>
             <img src="images/oculos-variadas/exame.png" alt="" class="img__exame">
             <img src="icons/flecha-baixo.png" alt="" class="flecha__icone">
-            <button class="agendar__btn lancamento__btn"><a href="agendamento/agendamento.html">AGENDAR</a></button>
+            <button class="agendar__btn"><a href="agendamento/agendamento.html">AGENDAR</a></button>
         </section>
-        <section class="endereco" id="ende">
+        <section class="container__endereco" id="ende">
             <h1>Endereço</h1>
             <p class="paragrafo__end">
                 Av. do Oratório, 4865 - Jardim Angela<br> (Zona Leste)<br>
                 Próximo a estação Vila Tolstói.
             </p>
             <p>Aberto de Segunda a Sexta-feira das 7:00 as 19:00</p>
-            <p>Whatsapp: (34) 9 9999-9999</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0428538714436!2d-46.5278773!3d-23.602795999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d68e7a3fba5%3A0xd88637e2f00bac1a!2sAv.%20do%20Orat%C3%B3rio%2C%204865%20-%20Jardim%20Guairaca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003221-200!5e0!3m2!1spt-BR!2sbr!4v1718342433715!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-                <section class="contato" id="contato">
-                    <h1>FALE CONOSCO</h1>
-                    <div class="contato__container">
-                        <div class="contato-whatsapp">
-                            <img src="icons/icon-whatsapp.png" alt="">
-                        </div>
-                        <div class="contato-instagram">
-                            <img src="icons/icon-instagram.png" alt="">
-                        </div>
-                        <div class="contato-facebook">
-                            <img src="icons/icon-facebook.png" alt="">
-                        </div>
+            <p>Whatsapp: (11) 2362-8799</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0428538714436!2d-46.5278773!3d-23.602795999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d68e7a3fba5%3A0xd88637e2f00bac1a!2sAv.%20do%20Orat%C3%B3rio%2C%204865%20-%20Jardim%20Guairaca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003221-200!5e0!3m2!1spt-BR!2sbr!4v1718342433715!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <section class="container__contato" id="contato">
+            <h1>FALE CONOSCO</h1>
+                <section class="redes__contato">
+                    <div class="contato-whatsapp">
+                        <img src="icons/icon-whatsapp.png" alt="">
+                        <p>(11) 2362-8799</p>
                     </div>
-                    <p>Nos siga nas redes sociais para acompanhar as novidades e fale com um consultor pelo Whatsapp.</p>
+                    <div class="contato-instagram">
+                        <img src="icons/icon-instagram.png" alt="">
+                        <p>@oticasvizz</p>
+                    </div>
+                    <div class="contato-facebook">
+                        <img src="icons/icon-facebook.png" alt="">
+                        <p>Wilker VIZZ</p>
+                    </div>
                 </section>
+            <p>Nos siga nas redes sociais para acompanhar as novidades e fale com um consultor pelo Whatsapp.</p>
         </section>
     </main>
     <footer>
