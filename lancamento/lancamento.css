@@ -26,25 +26,16 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 1rem;
 }
 
 .lancamento {
     display: flex;
     flex-direction: column;
-    border: 0.2rem solid var(--cor-verde-medio);
-    background-color: var(--cor-verde-escuro);
     font-size: 1.2rem;
     width: 100%;
-    margin-bottom: 1rem;
     overflow: hidden;
-}
-
-.lancamento__h1 {
-    background-color: var(--cor-verde-escuro);
-    padding: 0.5rem 0rem 3rem 0rem;
-    letter-spacing: 0.2rem;
-    font-weight: 100;
-    width: 100%;
+    text-align: center;
 }
 
 .lancamento:nth-child(-n+2) {
@@ -66,13 +57,15 @@ body {
     margin-top: 0.5rem;
 }
 
+.flecha__icone-baixo {
+    margin-bottom: 1.3rem;
+}
+
 .flecha__icone {
     position: relative;
     width: 1.5rem;
     height: auto;
-    background-color: var(--cor-verde-escuro)!important;
     border: none!important;
-    opacity: 50%;
     animation: moveY 0.5s infinite alternate;
 }
 
@@ -102,6 +95,10 @@ body {
     transform: scale(1.1);
 }
 
+.lancamento__img{
+    background-color: var(--cor-branca);
+}
+
 .mais-detalhes {
     display: flex;
     align-self: flex-end;
@@ -120,19 +117,10 @@ body {
     border-bottom: 0.1rem solid #fff;
 }
 
-.lancamento h3 {
-    align-self: flex-start;
-    font-size: 1rem;
-    font-weight: 100;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-}
-
 .lancamento__paragrafo {
     align-self: center;
     font-size: 0.9rem;
     color: var(--cor-branca);
-    background-color: var(--cor-verde-escuro);
     padding: 0.2rem;
     margin-bottom: 0.5rem;
     letter-spacing: 0.1rem;
@@ -260,54 +248,4 @@ body {
     opacity: 1;
     max-height: 500px;
     transition: opacity 0.5s ease-in, max-height 0.5s ease-in;
-}
-
-@media screen and (min-width: 768px) {
-    .lancamento__h1 {
-        margin-top: 3rem;
-    }
-
-    .lancamento {
-        margin-bottom: 0rem;
-    }
-
-    .lancamento__img {
-        background-color: var(--cor-cinza);
-    }
-
-    .lancamento__destaque__resp{
-        padding: 0rem 15rem 0rem 15rem;
-    }
-
-    .lancamentos__container{
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: var(--cor-verde-escuro);
-        padding: 1rem 1rem 4rem 1rem;
-    }
-
-    .lancamentos__container > :nth-child(1),
-    .lancamentos__container > :nth-child(2),
-    .lancamentos__container > :nth-child(3) {
-        width: 40%;
-        height: auto;
-        border: 1px solid #ffffff29;
-        padding: 0.5rem;
-
-    }
-
-    .lancamentos__container > :nth-child(3) {
-        margin-top: 1rem;
-    }
-
-    .lancamentos__container > :nth-child(4) {
-        width: 100%;
-    }
-
-    .mais__responsivo{
-        margin-top: 1.3rem;
-    }
-
-
 }

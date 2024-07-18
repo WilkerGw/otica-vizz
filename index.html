@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="lancamento/lancamento.css">
     <link rel="stylesheet" href="style.css">
     <title>Ótica Vizz</title>
+    <script src="menu.js" defer></script>
     <script src="banner/banner.js" defer></script>
     <script src="lancamento/tema.js" defer></script>
     <script src="lancamento/lancamento.js" defer></script>
@@ -46,30 +47,27 @@
                 <div class="container__v"><img src="images/v.png" alt="" class="v__menu"></div>
             </nav>
             <img src="icons/cardapio-bco.png" alt="" id="btnMenu" class="icone__menu">
-            <img src="icons/fecha-bco.png" alt="" class="icone__fecha" id="imgFecha">
-            <a href=""><img src="images/logo-vizz-nome.png" alt="" class="img__marca" id="imgLogo"></a>
+            <img src="icons/x.png" alt="" class="icone__fecha" id="imgFecha">
+            <a href=""><img src="logos-img/vizz-nome.png" alt="" class="img__marca" id="imgLogo"></a>
             <img src="icons/lupa-bca.png" alt="" class="icone__lupa" id="imgLupa">
             <img src="icons/carrinho-bco.png" alt="" class="icone__carrinho" id="imgCarrinho">
         </div>
     </header>
     <main>
-        <!--<a href="https://api.whatsapp.com/send?phone=SEUNUMERO" class="whatsapp-button" target="_blank">
-            <img src="icons/whatsapp-fixo.png" alt="WhatsApp Logo">
-        </a> -->
-        <div class="grid__responsivo">
+        <section class="grid__responsivo">
             <div class="container__provisorio">
                 <div class="busca__container">
-                    <img src="icons/lupa-azul.png" alt="Buscar..." class="icone__lupa"/>
+                    <img src="icons/lupa-cinza.png" alt="Buscar..." class="icone__lupa"/>
                     <input type="text" class="txt__busca" placeholder="Buscar..."/>
                     <button class="btn__busca">Buscar</button>
                 </div>
             </div>
                 <div class="container__style__logo">
-                    <img src="images/logo-vizz-completa.png" alt="" class="img__oculos-preto">
+                    <img src="logos-img/Óticas (1).png" alt="" class="img__oculos-preto">
                 </div>
                 <div class="redes__container">
                     <a href="https://www.instagram.com/oticasvizz/" target="_blank"><img src="icons/icon-instagram.png" alt=""></a>
-                    <a href="https://wa.me/+5534993210534" target="_blank"><img src="icons/icon-whatsapp.png" alt=""></a>
+                    <a href="https://wa.me/+551123628799" target="_blank"><img src="icons/icon-whatsapp.png" alt=""></a>
                     <a href="https://www.facebook.com/wilker.martins.104/" target="_blank"><img src="icons/icon-facebook.png" alt=""></a>
                 </div>
                 <div class="carousel">
@@ -84,9 +82,9 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-        </div>
-        <h1 class="lancamento__h1">Lançamentos</h1>
-        <div class="lancamento lancamento__destaque__resp">
+        </section>
+        <section class="lancamento">
+            <h1 class="lancamento__h1">Lançamentos</h1>
             <div class="borda__imagem__lancamento">
                     <h3>Modelo X12f1</h3>
                     <img src="images/oculos/destaque01/destaque1.png" alt="" class="lancamento__img">
@@ -110,14 +108,14 @@
             </p>
             <div class="container__botoes">
                 <p class="vermail">Ver mais</p>
-                <button class="lancamento__btn"><img src="icons/comprar.png" class="icone__comprar" alt=""> COMPRAR</button>
+                <button class="lancamento__btn"><img src="icons/carrinho-btn.png" class="icone__comprar" alt=""> COMPRAR</button>
             </div>
             <button class="mais__lancamentos-btn">
-                <img src="icons/flecha-baixo.png" alt="" class="flecha__icone">
+                <img src="icons/flecha-baixo.png" alt="" class="flecha__icone flecha__icone-baixo">
                 <p class="mais__responsivo">MAIS LANCAMENTOS</p>
             </button>
-        </div>
-        <div class="lancamentos__container">
+        </section>
+        <section class="lancamentos__container">
             <div class="lancamento">
                 <div class="borda__imagem__lancamento">
                     <div class="container__mudar__imagem">
@@ -144,7 +142,7 @@
                 </p>
                 <div class="container__botoes">
                     <p class="vermail">Ver mais</p>
-                    <button class="lancamento__btn"><img src="icons/comprar.png" class="icone__comprar" alt=""> COMPRAR</button>
+                    <button class="lancamento__btn"><img src="icons/carrinho-btn.png" class="icone__comprar" alt=""> COMPRAR</button>
                 </div>
             </div>
             <div class="lancamento">
@@ -171,7 +169,7 @@
                 </p>
                 <div class="container__botoes">
                     <p class="vermail">Ver mais</p>
-                    <button class="lancamento__btn"><img src="icons/comprar.png" class="icone__comprar" alt=""> COMPRAR</button>
+                    <button class="lancamento__btn"><img src="icons/carrinho-btn.png" class="icone__comprar" alt=""> COMPRAR</button>
                 </div>
             </div>
             <div class="lancamento">
@@ -198,22 +196,22 @@
                 </p>
                 <div class="container__botoes">
                     <p class="vermail">Ver mais</p>
-                    <button class="lancamento__btn"><img src="icons/comprar.png" class="icone__comprar" alt=""> COMPRAR</button>
+                    <button class="lancamento__btn"><img src="icons/carrinho-btn.png" class="icone__comprar" alt=""> COMPRAR</button>
                 </div>
             </div>
             <button class="menos__lancamentos-btn">
-                <p>FECHAR LANÇAMENTOS</p>
+                <p>FECHAR LANÇAMENTO</p>
                 <img src="icons/flecha-cima.png" alt="" class="flecha__icone">
             </button>
-        </div>
-        <div class="exames">
+        </section>
+        <section class="exames">
             <h1 class="exame__h1">Exames de Vista</h1>
             <p>Agende seu exame de vista com nossos especialistas e cuide da sua saúde ocular.</p>
             <img src="images/oculos-variadas/exame.png" alt="" class="img__exame">
             <img src="icons/flecha-baixo.png" alt="" class="flecha__icone">
             <button class="agendar__btn lancamento__btn"><a href="agendamento/agendamento.html">AGENDAR</a></button>
-        </div>
-        <div class="endereco" id="ende">
+        </section>
+        <section class="endereco" id="ende">
             <h1>Endereço</h1>
             <p class="paragrafo__end">
                 Av. do Oratório, 4865 - Jardim Angela<br> (Zona Leste)<br>
@@ -222,24 +220,24 @@
             <p>Aberto de Segunda a Sexta-feira das 7:00 as 19:00</p>
             <p>Whatsapp: (34) 9 9999-9999</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0428538714436!2d-46.5278773!3d-23.602795999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d68e7a3fba5%3A0xd88637e2f00bac1a!2sAv.%20do%20Orat%C3%B3rio%2C%204865%20-%20Jardim%20Guairaca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003221-200!5e0!3m2!1spt-BR!2sbr!4v1718342433715!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
-        <div class="contato" id="contato">
-            <h1>FALE CONOSCO</h1>
-            <div class="contato__container">
-                <div class="contato-whatsapp">
-                    <img src="icons/icon-whatsapp.png" alt="">
-                </div>
-                <div class="contato-instagram">
-                <img src="icons/icon-instagram.png" alt="">
-                </div>
-                <div class="contato-facebook">
-                    <img src="icons/icon-facebook.png" alt="">
-                </div>
-            </div>
-            <p>Nos siga nas redes sociais para acompanhar as novidades e fale com um consultor pelo Whatsapp.</p>
-        </div>
+                <section class="contato" id="contato">
+                    <h1>FALE CONOSCO</h1>
+                    <div class="contato__container">
+                        <div class="contato-whatsapp">
+                            <img src="icons/icon-whatsapp.png" alt="">
+                        </div>
+                        <div class="contato-instagram">
+                            <img src="icons/icon-instagram.png" alt="">
+                        </div>
+                        <div class="contato-facebook">
+                            <img src="icons/icon-facebook.png" alt="">
+                        </div>
+                    </div>
+                    <p>Nos siga nas redes sociais para acompanhar as novidades e fale com um consultor pelo Whatsapp.</p>
+                </section>
+        </section>
     </main>
     <footer>
     </footer>
-   <script src="menu.js"></script>
 </body>
 </html>

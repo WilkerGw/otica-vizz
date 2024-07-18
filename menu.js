@@ -13,7 +13,6 @@ let listaEndereco = document.getElementById ('listaEndereco');
 let subMaps = document.getElementById ('subMaps');
 let iconesHeader = document.getElementById('imgLogo')
 let imgCarrinho = document.getElementById ('imgCarrinho')
-let imgLupa = document.getElementById ('imgLupa')
 let imgFecha = document.getElementById ('imgFecha')
 
 btnMenu.onclick = function () {
@@ -30,7 +29,6 @@ function mostraMenu() {
         btnMenu.style.display = 'none';
         imgLogo.style.display = 'none';
         imgCarrinho.style.display = 'none';
-        imgLupa.style.display = 'none';
         imgFecha.style.display = 'grid';
     } else {
         menu.style.display = 'none';
@@ -43,7 +41,6 @@ function fechaMenu() {
         btnMenu.style.display = 'block'
         imgLogo.style.display = 'block'
         imgCarrinho.style.display = 'block'
-        imgLupa.style.display = 'block'
         imgFecha.style.display = 'none'
     }
 }
